@@ -13,18 +13,20 @@ brew install stevenjpx2/taps/stable
 
 ## First setup
 
-Choose models, worker capacity, and completion checks in `stable.config.ts`:
+Choose models, worker capacity, budgets, and completion checks in
+`stable.config.ts`:
 
 ```ts
 export default {
   coordinator: { model: "anthropic/claude-opus-5-5" },
   workers: { model: "openai/gpt-6.2-sol", max: 4 },
+  budget: { usd: 20, hours: 2 },
   done: ["ci green", "review clean"],
 };
 ```
 
-Set a time budget and a money budget for each run in the config. The supervisor
-oversees those limits. The configured checks require green CI and a clean review.
+This example gives each run $20 and two hours. Completion requires green CI
+and a clean review.
 
 ## Add a feature to Sourcefed
 
