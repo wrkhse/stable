@@ -63,7 +63,7 @@ follow the work in a browser, or receive run events through sourcefed.
 
 - [ ] Unattended runs with atelier delegation and review
 - [ ] Per-run time and money budgets, CLI status, status page, and sourcefed events
-- [ ] Publish stable 0.1.0 to the stevenjpx2/taps tap
+- [ ] Publish stable 0.1.0 to the wrkhse/tap tap
 
 ## More
 
